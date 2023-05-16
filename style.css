@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Quicksand&display=swap');
+
+/* reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  resize: none;
+}
+
+header {
+  background-color: var(--verde);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.logo {
+  width: 150px;
+
+}
+
+/* classe de alinhamento */
+.alinhamento {
+  width: 1440px;
+  margin: 0 auto;
+
+}
+
+.menu a:hover {
+  border-bottom: 2px solid var(--branco_pastel);
+  /* font-size: large; aumenta a letra ao passar o mouse */
+
+}
+
+.logo {
+  width: 150px;
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.menu a {
+  text-transform: uppercase;
+  color: white;
+  text-decoration: 20px;
+  font-size: 20px;
+  font-family: var(--font_mont);
+  font-weight: 800px;
+
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  list-style: none;
+}
+
+#comecial{
+  background-color: #285C39;
+  height: 500px;
+  width: 100%;
+}
+/* variaveis css */
+:root {
+  --font_one: 'Carter One', cursive;
+  --font_quick: 'Quicksand', sans-serif;
+  --verde: #285C39;
+  --branco_pastel: #F0E0C7;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #242424;
+  font-family: sans-serif;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+  color: var(--verde);
+  font-family: var(--font_quick);
+}
+
+h1 {
+  padding: 250px;
+  font-family: var(--font_one);
+}
+
+.link_esg {
+
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: block;
+  background-color: #F0E0C7;
+}
+
+.container {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-family: var(--font_quick);
+  font-size: 20px;
+  color: var(--verde);
+}
+
+section.module p {
+  margin-bottom: 40px;
+}
+
+section.module:last-child {
+  margin-bottom: 0;
+}
+
+section.module h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+section.module.content {
+  padding: 40px 0;
+  background: #F0E0C7;
+}
+
+section.module.parallax {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh !important;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+section.module.parallax:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  /* position: absolute; */
+  z-index: 8;
+  background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.4) 40%, #F0E0C7 100%);
+  background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #285C39 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #F0E0C7 100%);
+}
+
+.logo_titi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  font-weight: 900;
+  padding-top: 200px;
+}
+
+section.module.parallax-1 {
+  background-image: url("https://conexaoplaneta.com.br/wp-content/uploads/2017/07/roupa-com-consciencia-conexao-planeta.jpg");
+}
+
+section.module.parallax-2 {
+  background-image: url("https://www.siteware.com.br/wp-content/uploads/2022/12/esg.png");
+}
+
+section.module.parallax-3 {
+  background-image: url("https://media.discordapp.net/attachments/1106208929538658307/1106209060698738811/heringjeito.jpg?width=1087&height=612");
+}
+
+section.module.parallax h1 {
+  color: #F0E0C7;
+  text-align: center;
+  font-size: 78px;
+  z-index: 50;
+  text-transform: uppercase;
+}
+
+/* formulario */
+.formulario {
+  background-color: var(--verde);
+  padding: 100px 0;
+
+}
+
+.formulario_titulo {
+  text-align: center;
+  font-family: var(--font_one);
+  font-size: 60px;
+  color: var(--branco_pastel);
+  margin: 15px;
+}
+
+form {
+  color: white;
+  font-family: var(--font_quick);
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+form>div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 700px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+label {
+  font-size: 25px;
+}
+
+input {
+  height: 35px;
+}
+
+textarea {
+  padding: 15px;
+}
+
+.borda {
+  border: 1px solid var(--branco_pastel);
+  border-radius: 15px;
+}
+
+.btn_forms {
+  background: white;
+  border: #EEE5DA;
+  border-radius: 30px;
+  width: 200px;
+  height: 60px;
+  font-size: 25px;
+  color: var(--verde);
+  margin: 0 auto;
+  box-shadow: 10px 10px 40px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Contato */
+.mapa {
+  width: 580px;
+}
+
+.contato {
+  padding: 100px 0;
+}
+
+.contato_titulo {
+  font-family: var(--font_one);
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.conteudo_contato {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.borda_mapa {
+  border: 5px solid var(--verde);
+  width: 700px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contato_info {
+  font-family: var(--font_quick);
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.info {
+  margin-right: 20px;
+  color: var(--verde);
+  /* display: flex; */
+}
+
+/* footer */
+footer {
+  background-color: var(--verde);
+  color: white;
+  font-family: var(--font_quick);
+  /* text-align: center; */
+  font-size: 19px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* padding: 20px 0;
+    text-align: center; */
+}
+
+@media all and (max-width: 1440px) {
+  #burguer {
+    display: none;
+  }
+
+  .alinhamento {
+    width: 100%;
+  }
+
+  nav {
+    padding: 0 50px;
+  }
+}
+
+@media all and (min-width: 900px) {
+  #burguer {
+    display: none;
+  }
+
+}
+
+@media all and (max-width: 900px) {
+  .conteudo_contato {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media all and (max-width: 820px) {
+
+  section.module h2 {
+    font-size: 32px;
+  }
+
+  .module h2,
+  p {
+    padding: 0 8px;
+  }
+
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+
+  section.module.parallax h1 {
+    font-size: 36px;
+  }
+
+  .logo_titi {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .conteudo_contato {
+    flex-direction: column-reverse;
+  }
+}
+
+@media all and (max-width: 768px) {
+  #burguer {
+    display: block;
+    color: #ffffff;
+    font-size: 55px;
+  }
+
+  #itens {
+    position: absolute;
+    /* viewPort height */
+    height: 92vh;
+    /* viwePort width */
+    width: 50vw;
+    top: 10vh;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--verde);
+    gap: 50px;
+    z-index: 1;
+  }
+
+  .menu li {
+    padding: 70px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .conteudo_contato {
+    flex-direction: column-reverse;
+  }
+}
+
+@media all and (max-width: 630px) {
+  .logo_titi {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media all and (max-width: 580px) {
+  .borda_mapa {
+    width: 580px;
+  }
+
+  #burguer {
+    display: block;
+    color: #ffffff;
+    font-size: 55px;
+  }
+
+  #itens {
+    position: absolute;
+    /* viewPort height */
+    height: 92vh;
+    /* viwePort width */
+    width: 50vw;
+    top: 16vh;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--verde);
+    gap: 50px;
+
+  }
+
+  .menu li {
+    padding: 50px;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .logo_titi {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media all and (max-width: 430px) {
+  .logo_titi {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media all and (max-width: 250px) {
+  .logo_titi {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media all and (max-width: 145px) {
+  .logo_titi {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media all and (max-width: 100px) {
+  .logo_titi {
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
